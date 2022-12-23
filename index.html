@@ -23,6 +23,7 @@
           <span>Your name</span>
           <div class="inputValue">
             <input
+              class="input"
               type="text"
               name="first-name"
               placeholder="first name"
@@ -31,9 +32,11 @@
               tabindex="1"
             />
             <input
+              class="input"
               type="text"
               name="last-name"
               placeholder="last name"
+              required
               tabindex="2"
             />
           </div>
@@ -58,6 +61,7 @@
               name="phone-number"
               autocomplete
               placeholder="000"
+              required
               tabindex="4"
             />
             <input
@@ -65,13 +69,15 @@
               name="phone-number"
               autocomplete
               placeholder="000"
+              required
               tabindex="5"
             />
             <input
               type="tel"
-              name="phone-number"
+              name="phone-number1"
               autocomplete
               placeholder="0000"
+              required
               tabindex="6"
             />
           </div>
@@ -91,7 +97,9 @@
           <!-- <label for="story">Tell us your story:</label> -->
           <textarea id="message" name="message" rows="5" cols="33"></textarea>
         </div>
-        <div class="message"><button type="submit">Submit</button></div>
+        <div class="message">
+          <button type="submit" disabled>Submit form</button>
+        </div>
       </form>
     </main>
   </body>
