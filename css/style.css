@@ -1,6 +1,11 @@
 * {
   box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
   font-size: 20px;
+}
+
+:root {
+  --input-width: 70%;
 }
 
 body {
@@ -19,7 +24,7 @@ body {
 }
 
 main {
-  box-shadow: 0px 0px 30px black;
+  box-shadow: 0px 0px 10px black;
   padding: 10px;
 }
 
@@ -31,6 +36,7 @@ form {
   max-width: 800px;
 }
 
+.message,
 label {
   width: 100%;
   display: flex;
@@ -39,9 +45,21 @@ label {
   padding: 10px;
 }
 
+.inputValue {
+  display: flex;
+  justify-content: space-between;
+  width: var(--input-width);
+  gap: 10px;
+}
+
 input {
-  width: 40%;
+  width: var(--input-width);
   outline: none;
+}
+
+textarea,
+select {
+  width: var(--input-width);
 }
 
 .valid {
@@ -50,4 +68,28 @@ input {
 
 .invalid {
   border: 2px solid red;
+}
+
+h2,
+h3 {
+  margin: 10px;
+}
+
+button {
+  background-color: inherit;
+  width: var(--input-width);
+  margin-left: auto;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 15px;
+}
+
+hr {
+  height: 3px;
+  background-color: #333;
 }

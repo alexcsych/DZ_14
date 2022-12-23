@@ -21,20 +21,22 @@
       <form action="">
         <label>
           <span>Your name</span>
-          <input
-            type="text"
-            name="first-name"
-            placeholder="first name"
-            autofocus
-            required
-            tabindex="1"
-          />
-          <input
-            type="text"
-            name="last-name"
-            placeholder="last name"
-            tabindex="2"
-          />
+          <div class="inputValue">
+            <input
+              type="text"
+              name="first-name"
+              placeholder="first name"
+              autofocus
+              required
+              tabindex="1"
+            />
+            <input
+              type="text"
+              name="last-name"
+              placeholder="last name"
+              tabindex="2"
+            />
+          </div>
         </label>
 
         <label>
@@ -49,29 +51,47 @@
         </label>
 
         <label>
-          <span>Phone</span>
-          <input
-            type="tel"
-            name="phone-number"
-            autocomplete
-            placeholder="000"
-            tabindex="4"
-          />
-          <input
-            type="tel"
-            name="phone-number"
-            autocomplete
-            placeholder="000"
-            tabindex="5"
-          />
-          <input
-            type="tel"
-            name="phone-number"
-            autocomplete
-            placeholder="0000"
-            tabindex="6"
-          />
+          <span>Phone*</span>
+          <div class="inputValue">
+            <input
+              type="tel"
+              name="phone-number"
+              autocomplete
+              placeholder="000"
+              tabindex="4"
+            />
+            <input
+              type="tel"
+              name="phone-number"
+              autocomplete
+              placeholder="000"
+              tabindex="5"
+            />
+            <input
+              type="tel"
+              name="phone-number"
+              autocomplete
+              placeholder="0000"
+              tabindex="6"
+            />
+          </div>
         </label>
+
+        <div class="message">
+          <span>Message subject*</span>
+          <select name="select">
+            <option value="value1" selected>Add</option>
+            <option value="value2">Delete</option>
+            <option value="value3">Other</option>
+          </select>
+        </div>
+
+        <div class="message">
+          <span>Message*</span>
+          <!-- <label for="story">Tell us your story:</label> -->
+          <textarea id="message" name="message" rows="5" cols="33"></textarea>
+        </div>
+        <div class="message"><button type="submit">Submit</button></div>
       </form>
     </main>
   </body>
